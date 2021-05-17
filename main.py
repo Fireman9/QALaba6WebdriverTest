@@ -10,19 +10,16 @@ def get_top_habr_news():
     print_top_3_posts(posts)
 
     driver.find_element_by_class_name("tabs").find_element_by_link_text("Неделя").click()
-    # time.sleep(1)
     posts = driver.find_elements_by_class_name("post__title_link")
     print("Top 3 post for week:")
     print_top_3_posts(posts)
 
     driver.find_element_by_class_name("tabs").find_element_by_link_text("Месяц").click()
-    time.sleep(1)
     posts = driver.find_elements_by_class_name("post__title_link")
     print("Top 3 post for month:")
     print_top_3_posts(posts)
 
     driver.find_element_by_class_name("tabs").find_element_by_link_text("Год").click()
-    time.sleep(1)
     posts = driver.find_elements_by_class_name("post__title_link")
     print("Top 3 post for year:")
     print_top_3_posts(posts)
