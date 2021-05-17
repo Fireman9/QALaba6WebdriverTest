@@ -1,5 +1,4 @@
 from selenium import webdriver
-import time
 
 
 def get_top_habr_news():
